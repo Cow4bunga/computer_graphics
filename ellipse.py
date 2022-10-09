@@ -15,7 +15,7 @@ def draw_ellipse(xc, yc, x, y):
     plt.plot(xc - x, yc - y, marker="o", markersize=5, markeredgecolor="red", markerfacecolor="red")
 
 
-def bresenham_circle_algo(xcenter, ycenter, rx, ry):
+def bresenham_ellipse_algo(xcenter, ycenter, rx, ry):
     x = 0
     y = ry
 
@@ -63,7 +63,7 @@ def main():
     ry = int(input("Enter the radius for y: "))
     xcenter = int(input("Enter the x coordinate of a center point: "))
     ycenter = int(input("Enter the y coordinate of a center point: "))
-    bresenham_circle_algo(xcenter, ycenter, rx, ry)
+    bresenham_ellipse_algo(xcenter, ycenter, rx, ry)
 
 
 if __name__ == "__main__":
